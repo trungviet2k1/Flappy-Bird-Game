@@ -17,8 +17,8 @@ public class Manager : MonoBehaviour
 
     void Update()
     {
-        ScoreText.text = "Score : " + Score.ToString();
-        InGameScoreText.text = Score.ToString();
+        InGameScoreText.text = "Score : " + Score.ToString();
+        ScoreText.text = Score.ToString();
         HighScoreText.text = PlayerPrefs.GetInt("HighScore").ToString();
     }
 

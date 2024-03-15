@@ -6,7 +6,7 @@ public class Score : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            GameObject.FindWithTag("Player").GetComponent<Manager>().Score += 1;
+            GameObject.FindWithTag("Manager").GetComponent<Manager>().Score += 1;
         }
     }
 }
