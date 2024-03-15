@@ -6,6 +6,11 @@ public class Menu : MonoBehaviour
 {
     public Text HighScore;
 
+    void Start()
+    {
+        Time.timeScale = 1;
+    }
+
     void Update()
     {
         HighScore.text = "High Score : " + PlayerPrefs.GetInt("HighScore").ToString();
