@@ -1201,9 +1201,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1291252596}
-  - component: {fileID: 1291252597}
   m_Layer: 0
-  m_Name: MusicManager
+  m_Name: SoundManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1224,18 +1223,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 617098281}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1291252597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1291252595}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e8d58688acd6e24e8b3a73e6ad424b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1313022193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,9 +1416,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObstaclePrefabs:
   - {fileID: 5745213587057392385, guid: adab06c7273d60748871ce7ae8710ad4, type: 3}
-  - {fileID: 5745213587057392385, guid: 6db77531e52c9684ca42138c885115ff, type: 3}
-  - {fileID: 5745213587057392385, guid: d13ced5f1b2034a429459c37ba662412, type: 3}
-  - {fileID: 5745213587057392385, guid: 383210df82942734f8533d3a85a0f4ea, type: 3}
+  - {fileID: 1480557342306049593, guid: 6db77531e52c9684ca42138c885115ff, type: 3}
+  - {fileID: 4294896927404442297, guid: d13ced5f1b2034a429459c37ba662412, type: 3}
+  - {fileID: 816029181380827541, guid: 383210df82942734f8533d3a85a0f4ea, type: 3}
   Spawn: 1
   spawnTimer: 1.5
 --- !u!1660057539 &9223372036854775807
