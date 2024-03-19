@@ -8,6 +8,7 @@ public class ObstacleDetection : MonoBehaviour
         {
             SoundManager.instance.PlayerDead();
             GameObject.FindWithTag("Manager").GetComponent<Manager>().GameOver();
+            SoundManager.instance.StopBackgroundMusic();
         }
     }
 }

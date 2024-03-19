@@ -4,11 +4,24 @@ using UnityEngine.UI;
 
 public class Manager : MonoBehaviour
 {
+    public static Manager instance;
     public int Score;
     public Text ScoreText;
     public Text InGameScoreText;
     public Text HighScoreText;
     public GameObject GameOverUI;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     void Start()
     {
