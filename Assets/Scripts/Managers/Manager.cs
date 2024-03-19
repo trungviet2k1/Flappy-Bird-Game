@@ -9,7 +9,7 @@ public class Manager : MonoBehaviour
     public Text InGameScoreText;
     public Text HighScoreText;
     public GameObject GameOverUI;
-    
+
     void Start()
     {
         Time.timeScale = 1f;

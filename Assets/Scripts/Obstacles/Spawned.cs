@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class Spawned : MonoBehaviour
 {
     public GameObject[] ObstaclePrefabs;
     public bool Spawn;

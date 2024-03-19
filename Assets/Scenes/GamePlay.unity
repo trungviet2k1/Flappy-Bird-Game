@@ -1744,6 +1744,7 @@ MonoBehaviour:
   deadSound: {fileID: 1217581749}
   hasPoint: {fileID: 8300000, guid: cd0aecc6966e01642b3f50400d156bbb, type: 3}
   playerDead: {fileID: 8300000, guid: 2349a73524bc0844aa244ce2417388da, type: 3}
+  backgroundMusic: {fileID: 8300000, guid: 71afc8c60983476468d5661e48b5cfd6, type: 3}
 --- !u!82 &1217581748
 AudioSource:
   m_ObjectHideFlags: 0
