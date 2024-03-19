@@ -6,7 +6,7 @@ public class Character : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetKey(KeyCode.Space))
         {
             GetComponent<Rigidbody>().velocity = birdVelocity;
         }

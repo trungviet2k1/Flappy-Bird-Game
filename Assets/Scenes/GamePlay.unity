@@ -25,7 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 0
-  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SubtractiveShadowColor: {r: 0.77254903, g: 0.63529414, b: 0.36078432, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 2f0469b5c24128340a67875a2c5a1dd2, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -324,7 +324,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 64.4668, y: -3}
-  m_SizeDelta: {x: 38.9336, y: 30}
+  m_SizeDelta: {x: 55, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97816313
 MonoBehaviour:
@@ -402,8 +402,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 64.4668, y: -3}
-  m_SizeDelta: {x: 38.9336, y: 30}
+  m_AnchoredPosition: {x: 70.57141, y: -3}
+  m_SizeDelta: {x: 55, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &115380687
 MonoBehaviour:
@@ -909,6 +909,7 @@ GameObject:
   - component: {fileID: 630267927}
   - component: {fileID: 630267929}
   - component: {fileID: 630267928}
+  - component: {fileID: 630267930}
   m_Layer: 5
   m_Name: ScoreInGameUI
   m_TagString: Untagged
@@ -932,8 +933,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 136, y: -332.65723}
-  m_SizeDelta: {x: 227.8438, y: 43.3144}
+  m_AnchoredPosition: {x: 131, y: -341.2771}
+  m_SizeDelta: {x: 225.6888, y: 60.5541}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &630267928
 MonoBehaviour:
@@ -948,7 +949,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 0.7886423, b: 0.3754716, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -957,12 +958,12 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 58b647c5b2ec4184e9a07a561cdf0644, type: 3}
-    m_FontSize: 40
+    m_FontSize: 50
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 0
-    m_MaxSize: 47
-    m_Alignment: 0
+    m_MaxSize: 50
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -977,6 +978,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 630267926}
   m_CullTransparentMesh: 1
+--- !u!114 &630267930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 630267926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,7 +1021,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
+  m_Color: {r: 0.78113204, g: 0.672911, b: 0.43478101, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1240,7 +1256,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.59344244, g: 0.89645314, b: 0.9169811, a: 0}
+  m_BackGroundColor: {r: 0.6827127, g: 0.85767436, b: 0.9547169, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1600,8 +1616,9 @@ MonoBehaviour:
   playerDead: {fileID: 8300000, guid: 2349a73524bc0844aa244ce2417388da, type: 3}
   backgroundMusicList:
   - {fileID: 8300000, guid: 3073ea3cac29e9246960d5eee2cd7f85, type: 3}
-  - {fileID: 8300000, guid: f55d9d8247ccb88448af07be29005973, type: 3}
+  - {fileID: 8300000, guid: 9d9ac511eb2e84d489c5b04da6ad25ae, type: 3}
   - {fileID: 8300000, guid: 5bb7c8239cb5da64297bdbb090167aa4, type: 3}
+  - {fileID: 8300000, guid: 3ae6d4d0a4b87d24ebc20420847a4c66, type: 3}
 --- !u!82 &1217581748
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1923,7 +1940,7 @@ MonoBehaviour:
   - {fileID: 4294896927404442297, guid: d13ced5f1b2034a429459c37ba662412, type: 3}
   - {fileID: 816029181380827541, guid: 383210df82942734f8533d3a85a0f4ea, type: 3}
   Spawn: 1
-  spawnTimer: 1.5
+  spawnTimer: 1.4
 --- !u!1 &1440858313
 GameObject:
   m_ObjectHideFlags: 0
